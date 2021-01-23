@@ -1,0 +1,1271 @@
+/*
+** name template            : NEWBIT
+** created in               : 7/7/2020
+** created with             : mahmoud khairy
+** last edit after finished : NO edit 
+*/
+:root 
+{
+    --main-color: #007bff;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html 
+{
+    overflow-x: hidden;
+}
+body
+{
+    overflow-x: hidden;
+   
+}
+button
+{
+    outline: none !important;
+}
+h1
+{
+    font-family: 'Bangers', cursive !important;
+}
+li 
+{
+    font-family: 'Merienda One', cursive !important;
+}
+p
+{
+    font-family: 'Neuton', serif !important;
+}
+/* start the nav */
+nav .logo img 
+{
+    width: 55%;
+    padding-top: 4%;
+}
+nav ul li 
+{
+    display: inline-block;
+    color: #0042a6;
+    margin-left: 2%;
+    padding: 2% 0 2%;
+    text-transform: capitalize;
+    transition: all 0.45s ease-in-out;
+}
+nav ul li:hover
+{
+    color: var(--main-color);
+    cursor: pointer;
+}
+details ul
+{
+    position: absolute;
+    width: 200px;
+    height: 170px;
+    left: 55%;
+    background-color: #fff;
+    z-index: 3;
+    border-radius: 20px;
+}
+details ul li 
+{
+    display: block;
+    text-align: left;
+    transition: all 0.45s ease-in-out;
+    margin-left:8px;
+}
+details ul li:hover 
+{
+    cursor: pointer;
+    transform: translateX(5px);
+}
+nav .bar 
+{
+    position: absolute;
+    top: 1.5%;
+    left: 80%;
+    color: var(--main-color);
+    cursor: pointer;
+    transition: all 0.54s ease-in-out;
+    display: none;
+}
+nav .bar .smenu
+{
+    position: relative;
+    top: 0.7%;
+    right: -43%;
+    width: 420px;
+    height: 268px;
+    background-color: #000;
+    z-index: 5;
+    transition: 0.7s;
+    border-radius: 20px;
+    border: 3px solid #fff;
+    box-shadow: -6px 8px 12px 11px var(--main-color);
+    transition: 0.6s;
+    display: none;
+}
+.bar .smenu ul li 
+{
+    display: block;
+    color: #Fff;
+    transition: all 0.45s ease-in-out;
+    margin-left: 2%;
+}
+.bar .smenu ul li:hover 
+{
+   color: #3fcdc7;
+   transform: translateX(5px);
+
+}
+.open 
+{
+    display: block !important;
+    right: 47% !important;
+    transition: right 0.45s ease-in-out !important;
+}
+@media(max-width:991px)
+{
+    nav .logo 
+    {
+        margin-bottom:1.5%;
+    }
+    nav  .col-lg-8
+    {
+        display: none;
+    }
+    nav .logo img 
+    {
+        width: 35%;
+    }
+    nav .bar 
+    {
+        display: block;
+    }
+    nav .bar .smenu
+    {
+        display: none;
+    }
+}
+@media(min-width:768px) and (max-width:991px)
+{
+    nav .bar .smenu
+    {
+        right: -47%;
+    }
+    nav .bar
+    {
+        top: 3%;
+    }
+}
+/* end the nav */
+/*start the header*/
+header .back 
+{
+    background-image: url(../img/intro-bg.png);
+    background-size: cover;
+}
+header .back h1 
+{
+    color: #fff;
+    font-size: 55px;
+    font-weight: bold;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+header .back h1 span 
+{
+    color: #74b5fc;
+    text-decoration: underline;
+}
+header .back button
+{
+    margin-top: 35%;
+    margin-bottom: 5%;
+    background-color: transparent;
+    color: #Fff;
+    border: 1px solid #fff;
+    padding: 1%;
+    border-radius: 20px;
+    width: 33%;
+    text-align: center;
+    margin-left: 2%;
+    text-transform: capitalize;
+    height: 50px;
+    font-weight: bold;
+    transition: all 0.45s ease-in-out;
+}
+header .back button:first-of-type
+{
+    background-color: #007bff;
+    border:  1px solid #007bff;
+}
+header .back button:first-of-type:hover  
+{
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+header .back button:last-of-type:hover
+{
+    background-color: #007bff;
+    border:  1px solid #007bff;
+}
+header .back img  
+{
+    width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+@media(max-width:767px)
+{
+    header .back h1
+    {
+        font-size: 40px;
+    }
+    header .back .intro   
+    {
+        text-align: center;
+        margin-top: 3%;
+
+    }
+    header .back .intro img 
+    {
+        width:70%
+    }
+    header .back button
+    {
+        margin-top: 20%;
+    }
+}
+@media(min-width:768px) and (max-width:991px)
+{
+    .back .headertext
+    {
+        max-width: 54.99%;
+    }
+    .back .headertext h1 
+    {
+        font-size: 40px;
+    }
+    .back .intro
+    {
+        max-width: 45%;
+    }
+    header .back .intro img
+    {
+        width: 100%;
+    }
+}
+/*end the header*/
+/*start the about us*/
+.sec1
+{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.sec1 h1 
+{
+    text-align: center;
+    text-transform: capitalize;
+}
+.sec1 p 
+{
+    text-align: center;
+    color: #556777;
+    padding-top: 10px;
+}
+.sec1 .content p 
+{
+    text-align: left;
+    font-size: 14px;
+    padding-bottom: 10%;
+}
+.sec1 .shopping div:first-of-type
+{
+    position: relative;
+    top: 64%;
+    transform: translate(-50%,0);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    line-height: 30px;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    transition: all 0.40s ease-in-out;    
+}
+.sec1 .shopping div:first-of-type i 
+{
+    position: relative;
+    top: 25%;
+    left: 25%;
+    font-size: 25px;
+}
+.sec1 .shopping div:first-of-type:hover 
+{
+    color:#fff;
+    background-color: var(--main-color);
+}
+.sec1 .shopping div:last-of-type
+{
+    margin-left: 14%;
+    margin-top: -12%;
+    max-width: 80%;
+}
+.sec1  div h4 
+{
+    margin-bottom: -2px;
+}
+.sec1 img
+{
+    width: 100%;
+}
+.sec1 .text 
+{
+    margin-top: 5%;
+    margin-left: 1%;
+    max-width: 49%;
+}
+.sec1 .text h4 
+{
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+.sec1 .text p
+{
+    text-align: left;
+}
+/*end the about us*/
+@media(max-width:767px)
+{
+    .sec1 .text 
+    {
+        text-align: center;
+        max-width: 90%;
+    }
+    .sec1 .text:first-of-type
+    {
+        margin-top: 2%;
+    }
+}
+@media(min-width:768px) and (max-width:991px)
+{
+    .sec1 .text 
+    {
+        text-align: center;
+        max-width: 90%;
+    }
+    .sec1 .text:first-of-type
+    {
+        margin-top: 2%;
+    }
+    .sec1 .shopping
+    {
+        max-width: 90%;
+        margin-left: 5%;
+    }
+}
+/*start the service*/
+.sec2 
+{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #ecf5ff;
+}
+.sec2 h1
+{
+    text-align: center;
+    text-transform: capitalize;
+}
+.sec2 p 
+{
+    text-align: center;
+    color: #556777;
+    padding-top: 10px;
+}
+.sec2 .lorem
+{
+    background-color: #fff;
+    max-width: 35%;
+    border-radius: 10px;
+    padding: 2%;
+    margin-left: 8%;
+    margin-top: 3%;
+    transition: all 0.40s ease-in-out;
+}
+.sec2 .lorem:hover 
+{
+    transform: translateY(-9px);
+}
+.sec2 .lorem:hover h4 
+{
+    color: var(--main-color);
+}
+.sec2 .lorem span 
+{
+    position: relative;
+    top: 50%;
+    margin-left: -2%;
+}
+.sec2 .lorem span i
+{
+    color:#ff88b0;
+    font-size: 28px;
+}
+.sec2 .lorem .book i 
+{
+    color: #e9bf06;
+}
+.sec2 .lorem .file i 
+{
+    color: #3fcdc7;
+}
+.sec2 .lorem .meter i 
+{
+    color: #41cf2e;
+}
+.sec2 .lorem .globe i 
+{
+    color: #d6ff22;
+}
+.sec2 .lorem .clock i 
+{
+    color: #76a1ff;
+}
+.sec2 .lorem h4
+{
+    font-weight: bold;
+    display: inline-block;
+}
+.sec2 .lorem p
+{
+    text-align: left;
+    color: #556777;
+    padding-top: 10px;
+    display: inline-block;
+    margin-left: 11%;
+}
+@media(max-width:767px)
+{
+    .sec2 .lorem
+    {
+        max-width: 60%;
+        margin-left: 25%;
+        margin-bottom: 3%;
+    }
+}
+@media(min-width:768px) and (max-width:991px)
+{
+    .sec2 .lorem
+    {
+        max-width: 45%;
+        margin-left: 2.5%;
+        margin-bottom: 3%;
+    }
+}
+/*end the service*/
+/*start the choose*/
+.sec3
+{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #004a99;
+}
+.sec3 h1 
+{
+  text-align: center;
+  color: #fff;
+
+}
+.sec3 p 
+{
+  text-align: center;
+  color: #fff;
+  padding-top: 1%;
+}
+.sec3 .card
+{
+    background-color: #00458f;
+    border: 1px solid #00458f;
+    max-width: 31%;
+    transition: all 0.45s ease-in-out;
+    margin-left: 2%;
+    margin-top: 5%;
+}
+.sec3 .card:hover 
+{
+    background-color: #083d79;
+    border: 1px solid #083d79;
+}
+.sec3 .card span 
+{
+    display: inline;
+    text-align: center;
+    padding: 3% 0;
+
+}
+.sec3 .card span i 
+{
+    color: #bcdbfd;
+    font-size: 40px;
+}
+.sec3 .card .content 
+{
+    text-align: center;
+}
+.sec3 .card .content h4 
+{
+    color: #fff;
+    font-weight: bold;
+}
+.sec3 .card .content p
+{
+    padding-top: 1% ;
+    line-height: 1.7;
+}
+.sec3 .card .content span 
+{
+    color: #fff;
+    margin-bottom: 1%;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 18px;
+    transition: all 0.45s ease-in-out;
+}
+.sec3 .card .content span:hover 
+{
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+.sec3 .static
+{
+    margin-top: 5%;
+    text-align: center;
+    color: #fff;
+}
+.sec3 .static h2 
+{
+    font-weight: bold;
+    font-size: 50px;
+}
+@media(max-width:767px)
+{
+    .sec3 .card
+    {
+        max-width: 95%;
+        margin-bottom: 2%;
+    }
+    .sec3 .static
+    {
+        max-width: 46%;
+        margin-left: 3% ;
+    }
+}
+@media(min-width:768px) and (max-width:991px)
+{
+    .sec3 .card
+    {
+        max-width: 45%;
+        margin-left: 2.5%;
+    }
+    .sec3 .card:last-of-type
+    {
+        max-width: 90%;
+        margin-left: 5%;
+    }
+    .sec3 .static
+    {
+        max-width: 40%;
+        margin-left: 5% ;
+    }
+
+}
+/*end the choose*/
+/*start the Portfolio*/
+.sec4
+{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.sec4 h1 
+{
+    text-align: center;
+}
+.sec4 > div 
+{
+    text-align: center;
+    margin-top: 4%;
+}
+.sec4  div button
+{
+    margin-left: 2%;
+    background-color: #ecf5ff;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    padding: 1%;
+    border-radius: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    width: 10%;
+    transition: all 0.45s ease-in-out;
+} 
+.sec4 .filter .act
+{
+    background-color: var(--main-color);
+    color: #Fff;
+}
+.sec4 ._1,
+.sec4 ._2,
+.sec4 ._3
+{
+    margin-top: 5%;
+}
+.sec4 ._4 
+{
+    margin-top: -13%;
+}
+.sec4 ._5 
+{
+    margin-top:-24%;
+}
+.sec4 ._6 
+{
+    margin-top: 3%;
+}
+.sec4 ._7 
+{
+    margin-top: 2%;
+}
+.sec4 ._8 
+{
+    margin-top: -8%;
+}
+.sec4 ._9
+{
+    margin-top: -6%;
+}
+.sec4  div img
+{
+    width: 100%;
+    position: relative;
+}
+.sec4 .img
+{
+    transition: all 0.45s ease-in-out;
+    margin-top: 5%;
+}
+.sec4 .img:hover 
+{
+  transform: scale(0.9);
+}
+.sec4 .img div 
+{
+    position: absolute;
+    background-color: var(--main-color);
+    opacity: 0.3;
+    height: 100% !important;
+}
+.sec4  .img:first-of-type:hover div
+{
+    width: 93%;
+    height: 66%;
+    top: -1px;
+    left: 13px;
+} 
+.sec4 .img:nth-of-type(2):hover div 
+{
+    width: 93%;
+    height: 44%;
+    top: 1px;
+    left: 14px;
+}
+.sec4 .img:nth-of-type(3):hover div 
+{
+    width: 93%;
+    height: 100%;
+    top: 1px;
+    left: 14px;
+}
+.sec4 .img:nth-of-type(4):hover div 
+{
+    width: 93%;
+    height: 100%;
+    top: 1px;
+    left: 14px;
+}
+.sec4 .img:nth-of-type(5):hover div
+{
+    width: 93%;
+    height: 81%;
+    top: -1px;
+    left: 14px;
+}
+.sec4 .img:nth-of-type(6):hover div
+{
+    width: 93%;
+    height: 63%;
+    top: 1px;
+    left: 14px;
+}
+.sec4 .img:nth-of-type(7):hover div
+{
+    width: 93%;
+    height: 100%;
+    top: 1px;
+    left: 14px;
+}
+.sec4 .img:nth-of-type(8):hover div
+{
+    width: 93%;
+    height: 68%;
+    top: 1px;
+    left: 14px;
+}
+.sec4 .img:nth-of-type(9):hover div
+{
+    width: 93%;
+    height: 74%;
+    top: 1px;
+    left: 14px;
+}
+@media(max-width:767px)
+{
+    .sec4 .img:hover div
+    {
+        width: 95% !important;
+    }
+}
+@media(min-width:768px) and (max-width:991px)
+{
+    .sec4 .img:hover div
+    {
+        width: 96% !important;
+    }
+}
+/*end the Portfolio*/
+/*start the Testimonials*/
+.sec5
+{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #ecf5ff;
+}
+.sec5 h1 
+{
+    text-align: center;
+}
+.sec5 .con img 
+{
+    width: 10%;
+    padding: 5px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin-left: 45%;
+    margin-top: 5%;
+}
+.sec5 .con h3 
+{
+  text-align: center;
+  font-weight: bold;
+  margin: 1% 0;
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span
+{
+    background-color: var(--main-color);
+}
+/*end the Testimonials*/
+/*start the team*/
+.sec6 
+{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.sec6 h1
+{
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.sec6 h1 ,
+.sec6 p 
+{
+    text-align: center;
+}
+.sec6 p 
+{
+    margin-top: 10px;
+}
+.sec6 .tem
+{
+    max-width: 21%;
+    text-align: center;
+}
+.sec6 .tem img 
+{
+    width: 100%;
+    padding: 5px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin-left: 50%;
+    margin-top: 10%;
+    position: relative;
+}
+.sec6 .tem:hover .info 
+{
+    position: absolute;
+    top: 5px;
+    left: -1px;
+    bottom: 0;
+    right: 4px;
+    width: 89%;
+    height: 95%;
+    border-radius: 50%;
+    background: rgba(0, 62, 128, 0.7);
+    opacity: 1;
+    margin-left: 50%;
+    margin-top: 5%;
+    transition: 0.3s;
+    cursor: pointer;
+    text-align: center;
+}
+.sec6 .tem .info span 
+{
+    color: #Fff;
+    font-weight: bold;
+    margin-top: 45%;
+    margin-bottom: 6%;
+    display: none;
+}
+.sec6 .tem .info .soc
+{
+    display: none;
+    text-align: left;
+    margin-left: 20%;
+}
+.sec6 .tem .info .soc i 
+{
+    color: #fff;
+    font-size: 22px;
+    margin-left: 2%;
+    transition: all 0.45s ease-in-out;
+}
+.sec6 .tem .info .soc i:hover 
+{
+    color: var(--main-color);
+}
+.sec6 .tem:hover .info span,
+.sec6 .tem:hover .info .soc 
+{
+    display: block;
+}
+@media(max-width:767px)
+{
+    .sec6 .tem 
+    {
+        max-width: 51%;
+        margin-left: 0%;
+        text-align: center;
+    }
+    .sec6 .tem .info .soc i 
+    {
+        margin-left: 8%;
+    }
+    .sec6 p 
+    {
+        max-width: 80%;
+        margin-left: 10%; 
+    }
+}
+@media(min-width:768px) and (max-width:991px)
+{
+    .sec6 .tem 
+    {
+        max-width: 34%;
+        margin-left: 2.5%;
+        text-align: center;
+    }
+}
+/*end the team*/
+/*start the client*/
+.sec7
+{
+    background-color: #ecf5ff;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.sec7 h1 
+{
+  text-transform: capitalize; 
+  padding-bottom: 1%;
+}
+.sec7 p 
+{
+    padding-bottom: 3%;
+}
+.sec7 .cli
+{
+    background-color: #fff;
+    border: 1px solid #d6eaff;
+    padding: 5%;
+}
+.sec7 .cli img
+{
+    width: 90%;
+    transition: all 0.45s ease-in-out;
+
+}
+.sec7 .cli:hover img 
+{
+  transform: scale(1.3);
+}
+@media(max-width:767px)
+{
+    .sec7 .cli
+    {
+        text-align: center;
+    }
+    .sec7 .cli img
+    {
+        width: 50%;
+    }
+    .sec7 .cli:hover img 
+    {
+        transform: scale(0.9);
+    }
+}
+@media(min-width:768px) and (max-width:991px)
+{
+    .sec7 .mon 
+    {
+        margin-left: 5%;
+    }
+    .sec7 .cli
+    {
+        text-align: center;
+        max-width: 45%;
+    }
+    .sec7 .cli img
+    {
+        width: 50%;
+    }
+}
+/*end the client*/
+/*start the contact*/
+.sec8 
+{
+    padding-top: 80px;
+    padding-bottom: 80px;   
+}
+.sec8 h1 
+{
+   text-align: center;
+   font-weight: bold;
+   margin-bottom: 2%;
+}
+.sec8 .loca i 
+{
+    color: #177fff;
+    margin-left: 6%;
+    margin-bottom: 1.5%;
+}
+.sec8 .loca i:nth-of-type(2)
+{
+    margin-left: 6%;
+}
+.sec8 .loca i:nth-of-type(3)
+{
+    margin-left: 6%;
+}
+.sec8 .loca span
+{
+    margin-left: 1%;
+}
+.sec8 form
+{
+    margin-top: 5%;
+}
+.sec8 form input:not(:last-of-type),
+.sec8 form textarea
+{
+    display: block;
+    margin-bottom: 2%;
+    padding: 1%;
+}
+.sec8 form input:first-of-type,
+.sec8 form input:nth-of-type(2)
+{
+   display: inline-block;
+   width: 45%;
+}
+.sec8 form input:nth-of-type(2)
+{
+    margin-left: 2%;
+}
+.sec8 form input:nth-of-type(3),
+.sec8 form textarea
+{
+    width: 90%;
+}
+
+.sec8 form input:last-of-type
+{
+    background-color:var(--main-color);
+    color: #Fff;
+    border: 1px solid var(--main-color);
+    padding: 1%;
+    border-radius: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    transition: all 0.45s ease-in-out;
+    width: 21%;
+    margin-left: 32%;
+    margin-top: 1%;
+}
+@media(max-width:767px)
+{
+    .sec8 div:first-of-type
+    {
+        margin-bottom: 2%;
+    }
+    .sec8 div:nth-of-type(2)
+    {
+        max-width: 100%;
+        text-align: center;
+    }
+    .sec8 .loca i 
+    {
+        margin-left: 0;
+        font-size: 20px;
+    }
+    .sec8 .loca span 
+    {
+        margin-left: 2%;
+        font-weight: bold;
+    }
+    .sec8 form input:nth-of-type(3),
+    .sec8 form textarea
+    {
+        max-width: 90%;
+        margin-left: 5%;
+    }
+    .sec8 form input:last-of-type
+    {
+        margin-left: 0%;
+        margin-top: 2%;
+    }
+
+}
+@media(min-width:768px) and (max-width:991px)
+{
+    .sec8 div:first-of-type
+    {
+        margin-bottom: 2%;
+    }
+    .sec8 div:nth-of-type(2)
+    {
+        max-width: 100%;
+        text-align: center;
+    }
+    .sec8 .loca i 
+    {
+        margin-left: 0;
+        font-size: 20px;
+    }
+    .sec8 .loca span 
+    {
+        margin-left: 2%;
+        font-weight: bold;
+    }
+    .sec8 .loca i:nth-of-type(2)
+    {
+        margin-left: 3%;
+    }
+    .sec8 .loca i:nth-of-type(3)
+    {
+        margin-left: -11%;
+    }
+    .sec8 form input:nth-of-type(3),
+    .sec8 form textarea
+    {
+        max-width: 90%;
+        margin-left: 5%;
+    }
+    .sec8 form input:last-of-type
+    {
+        margin-left: 0%;
+        margin-top: 2%;
+    }
+}
+/*end the contact*/
+/*start the footer*/
+.sec9
+{
+    padding-top: 60px;
+    background-color: #004a99;
+    color: #Fff;
+}
+.sec9 .lay 
+{
+    padding-bottom: 1%;
+}
+.sec9 .NewBiz h1 
+{
+    letter-spacing: 11px;
+    padding-bottom: 4%;
+    font-weight: bold;
+}
+.sec9 .NewBiz p
+{
+    line-height: 1.7;
+}
+.sec9 .Useful h4,
+.sec9 .us h4 ,
+.sec9 .Newsletter h4
+{
+    letter-spacing: -1px;
+    font-weight: bold;
+    margin-bottom: 11%;
+}
+.sec9 .Useful ul li 
+{
+    margin-bottom: 9%;
+    transition: all 0.45s ease-in-out;
+}
+.sec9 .Useful ul li:hover 
+{
+    color: #74b5fc;
+    cursor: pointer;
+}
+.sec9 .Newsletter input 
+{
+    display: inline-block;
+    width: 55%;
+    background-color: #Fff;
+    border: 1px solid #FFf;
+    padding: 1%;
+}
+.sec9 .Newsletter button
+{
+    padding: 1%;
+    text-align: center;
+    color: #Fff;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    cursor: pointer;
+}
+.sec9 footer 
+{
+    padding-top: 5px;
+    padding-bottom: 10px;
+    background-color: #00428a;
+    text-align: center;
+}
+.sec9 footer div 
+{
+    padding-bottom: 1%;
+}
+.sec9 footer div span 
+{
+    font-weight: bold;
+}
+.sec9 footer p a 
+{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    transition: all 0.4 ease-in-out;
+}
+.sec9 footer p a:hover 
+{
+    color:#74b5fc ;
+    transform: translateY(5px);
+}
+@media(max-width:767px)
+{    
+    .sec9 .NewBiz,
+    .sec9 .Useful,
+    .sec9 .us ,
+    .sec9 .Newsletter
+    {
+        max-width: 90%;
+        margin-left: 5%;
+        text-align: center;
+    }
+    .sec9 .Newsletter
+    {
+        margin-bottom: 2%;
+    }
+    .sec9 .Useful h4 ,
+    .sec9 .us h4 ,
+    .sec9 .Newsletter h4
+    {
+        margin-bottom: 3%;
+        margin-top: 5%;
+        text-align: left;
+    }
+    .sec9 .Useful ul li
+    {
+        margin-bottom: 1.5%;
+    }
+}
+@media(min-width:768px) and (max-width:991px)
+{
+    .sec9 .NewBiz,
+    .sec9 .Useful,
+    .sec9 .us ,
+    .sec9 .Newsletter
+    {
+        max-width: 90%;
+        margin-left: 5%;
+        text-align: center;
+    }
+    .sec9 .Newsletter
+    {
+        margin-bottom: 2%;
+    }
+    .sec9 .Useful h4 ,
+    .sec9 .us h4 ,
+    .sec9 .Newsletter h4
+    {
+        margin-bottom: 3%;
+        margin-top: 5%;
+        text-align: left;
+    }
+    .sec9 .Useful ul li
+    {
+        margin-bottom: 1.5%;
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+}
+/*end the footer*/
+/*start scroll top */
+.scroll
+{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    cursor: pointer;
+    display: none;
+}
+.scroll i 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    color: #fff;
+    font-size: 22px;
+}
+/*end scroll top*/
